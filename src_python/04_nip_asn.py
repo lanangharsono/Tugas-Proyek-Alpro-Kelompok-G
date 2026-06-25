@@ -8,6 +8,9 @@ Original file is located at
 """
 
 #Program NIP_ASN
+#Skenario 1 :199410212019031010
+#Skenario 2 :200002292022011002
+#Skenario 3 :200302292024011004
 #Skenario 1
 #Inisialisasi kamus bulan dan batas hari
 data_bulan = {
