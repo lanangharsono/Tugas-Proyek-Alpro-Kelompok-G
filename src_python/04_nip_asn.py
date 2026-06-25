@@ -30,20 +30,19 @@ while True:
   #Validasi rentang bulan
   if bulan < 1 or bulan > 12:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
-
+    continue 
   #Mengambil data dari kamus
   nama_bulan = data_bulan[bulan]
   max_hari = data_hari[bulan]
 
-  #Cek tahun kabisat (ubdate batas Februari)
+  #Cek tahun kabisat (update batas Februari)
   if bulan == 2 and (tahun % 400 == 0 or (tahun % 4 == 0 and tahun % 100 != 0)):
     max_hari = 29
 
   #Validasi batas tanggal
   if tanggal <1 or tanggal > max_hari:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
+    continue 
 
   #Jika semua valid
   print("Tanggal lahir Anda:", tanggal, nama_bulan, tahun)
@@ -71,20 +70,20 @@ while True:
   #Validasi rentang bulan
   if bulan < 1 or bulan > 12:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
+    continue 
 
   #Mengambil data dari kamus
   nama_bulan = data_bulan[bulan]
   max_hari = data_hari[bulan]
 
-  #Cek tahun kabisat (ubdate batas Februari)
+  #Cek tahun kabisat (update batas Februari)
   if bulan == 2 and (tahun % 400 == 0 or (tahun % 4 == 0 and tahun % 100 != 0)):
     max_hari = 29
 
   #Validasi batas tanggal
   if tanggal <1 or tanggal > max_hari:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
+    continue 
 
   #Jika semua valid
   print("Tanggal lahir Anda:", tanggal, nama_bulan, tahun)
@@ -112,20 +111,20 @@ while True:
   #Validasi rentang bulan
   if bulan < 1 or bulan > 12:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
+    continue 
 
   #Mengambil data dari kamus
   nama_bulan = data_bulan[bulan]
   max_hari = data_hari[bulan]
 
-  #Cek tahun kabisat (ubdate batas Februari)
+  #Cek tahun kabisat (update batas Februari)
   if bulan == 2 and (tahun % 400 == 0 or (tahun % 4 == 0 and tahun % 100 != 0)):
     max_hari = 29
 
   #Validasi batas tanggal
   if tanggal <1 or tanggal > max_hari:
     print("NIP tidak valid, harap masukkan ulang.")
-    continue #Kembali ke input NIP
+    continue 
 
   #Jika semua valid
   print("Tanggal lahir Anda:", tanggal, nama_bulan, tahun)
