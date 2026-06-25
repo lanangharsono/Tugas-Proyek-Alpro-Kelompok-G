@@ -19,14 +19,14 @@ while (TRUE) {
   #Validasi rentang bulan
   if (bulan < 1 | bulan > 12){
     cat("NIP tidak valid, harap masukkan ulang.\n\n")
-    next #Kembali ke "repeat"
+    next 
   }
   
   #Mengambil data dari kamus
   nama_bulan <- data_bulan[bulan]
   max_hari <- data_hari[bulan]
   
-  #Cek tahun kabisat (ubdate batas Februari)
+  #Cek tahun kabisat (update batas Februari)
   if (bulan == 2 & (tahun %% 400 == 0 | (tahun %% 4 == 0 & tahun %% 100 != 0))){
     max_hari = 29
   }
@@ -34,7 +34,7 @@ while (TRUE) {
   #Validasi batas tanggal
   if (tanggal <1 | tanggal > max_hari){
     cat("NIP tidak valid, harap masukkan ulang.\n\n")
-    next #Kembali ke "repeat"
+    next 
   }
   
   #Jika semua valid
